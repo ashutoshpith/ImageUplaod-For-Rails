@@ -25,5 +25,10 @@
   <%= @computer.sold %>
 </p>
 
+<p>
+  <strong>Cover Pic:</strong>
+  <%= @computer.cover %>
+</p>
+<%= image_tag  @computer.cover.url if @computer.cover? %>
 <%= link_to 'Edit', edit_computer_path(@computer) %> |
 <%= link_to 'Back', computers_path %>
