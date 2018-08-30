@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 2018_08_18_005301) do
     t.integer "sold"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "cover"
+    t.json "cover"
   end
 
 end
